@@ -15,3 +15,6 @@ html,body {
   right: 10px;
   top: 10px;
 }
+.modal select{
+  font-size: 40px
+}
