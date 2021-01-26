@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBZtyT0AsGVsqhFc0gT8RDIvdwq9giBA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="modal" class="modal">
+        <form>
+            <select name="option" id="Select">
+                <option value="arbol">arbol</option>
+                <option value="basura">basura</option>
+            </select>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
