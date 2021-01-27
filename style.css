@@ -12,6 +12,21 @@ html,body {
 }
 .modal{
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.modal form{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 15px;
+  padding: 15px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.modal form select, .modal form textarea, .modal form input{
+  margin-top: 15px;
 }
