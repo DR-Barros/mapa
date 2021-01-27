@@ -10,10 +10,10 @@ function initMap() {
         zoom: 15,
         minZoom: 15,
         restriction:{
-            north: -33,
-            south: -34,
-            east: -70,
-            west: -71,
+            north: -33.2,
+            south: -33.8,
+            east: -70.4,
+            west: -70.8,
         }
     });
     map.addListener("click", (e) => {
