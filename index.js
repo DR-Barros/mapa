@@ -7,13 +7,13 @@ let iconos = {
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -33.433475, lng: -70.563180 },
-        zoom: 15,
+        zoom: 20,
         minZoom: 15,
         restriction:{
-            north: -33.2,
-            south: -33.8,
-            east: -70.4,
-            west: -70.8,
+            north: -33.4,
+            south: -33.5,
+            east: -70.5,
+            west: -70.6,
         }
     });
     map.addListener("click", (e) => {
