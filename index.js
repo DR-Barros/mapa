@@ -18,15 +18,18 @@ function initMap() {
     });
     map.addListener("click", (e) => {
         let tipo = document.getElementById("Select").value;
-        console.log(tipo)
         placeMarkerAndPanTo(e.latLng, map, iconos[tipo]);
     });
 }
 function placeMarkerAndPanTo(latLng, map, tipo) {
-    makers[makers.length] = new google.maps.Marker({
+    let indx = makers.length;
+    makers[indx] = new google.maps.Marker({
         position: latLng,
         map: map,
         icon: tipo
+    });
+    makers[indx].addListener("click", () =>{
+        makers[indx].setMap(null)
     });
     /* makers.forEach(maker => {
         console.log(
